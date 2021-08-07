@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MATRIX MAGAZINE</title>
+ 
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    
+        <link rel="stylesheet" href="css/style.css">
+        
+        
+    <link rel="stylesheet" href="bootstrap/Share Button/css/normalize.css">
+
+        <link rel="stylesheet" href="bootstrap/Share Button/css/style.css">
+    
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+		<link rel="stylesheet" href="css/jquery.pageslide.css"/>
+        <link href="bootstrap/css/dialog.css"  rel="stylesheet">
+		<script src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script src="bootstrap/Share Button/js/index.js"></script>
+    <!-- CSS kamu, Panggil CSS buatan mu sendiri di bawah sini seperti biasa -->
+     
+    <!-- JS untuk IE -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <audio src="sound/backsound.mp3" autoplay="autoplay" hidden="hidden" loop></audio>
+    
+  </head>
+  
+  
+  
+  
+  <link href="bootstrap/css/menulingkar.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  
+  <div class="cr-menu">
+    <div class="cr-hover"></div>
+    
+    <a href="#openModal2"><div class="cr-item it-1"></div></a>
+    <a href="https://drive.google.com/file/d/0B47nEWvoeAmrQlNoSVhERlN1cnM/view?usp=sharing"><div class="cr-item it-2"></div></a>
+    <a href="https://drive.google.com/file/d/0B47nEWvoeAmrUzJBMGt2Nm1iUUE/view?usp=sharing"><div class="cr-item it-3"><div id="audio"></div></div></a>
+    <a href="https://www.facebook.com/profile.php?id=100010815124287"><div class="cr-item it-4"></div></a>
+    <a href="#"><div id="fsbutton"><div class="cr-item it-5"></div></div></a>
+    <script>$(document).keyup(function(e) {
+
+  if (e.keyCode == 27) { $(".arrow").removeClass( "clicked" ); }   // esc
+});</script>
+  <script>$(function() {
+    $( "#fsbutton" ).click(function() {
+      $( ".arrow" ).toggleClass( "clicked" );
+/*      $('#fsbutton').attr('id', 'fsbuttonclicked'); */
+      return false;
+    });
+    });</script>
+    <a href="https://twitter.com/MatriksMagazine">
+    <div class="cr-item it-6"></div></a>
+    
+    <div class="cr-cont"></div>
+  </div>
+  <!-- END --->
+  
+  <div id="bodyb" class="clearfixb">
+<div class="cr-menub">
+    <div class="cr-hoverb bg-noneb"></div>
+    
+    <a id="plusBtn" onclick="plus()"><div class="cr-itemb it-4b"></div></a>
+     <a href="#openModal"><div class="cr-itemb it-5b"></div></a>
+    <a id="minusBtn" onClick="minus()"><div class="cr-itemb it-6b"></div></a>
+    
+    <div class="cr-contb"><p></p></div>
+  </div>
+</div> <!--body-->
+
+
+
+  
+  
+  <body id="background">
+  
+  <!-- Content START -->
+  <div id="slideshow-mudah" class="carousel slide" data-ride="carousel" data-interval=false wrap=false>
+  <!-- Indicators, Ini adalah Tombol BULET BULET dibawah. item ini dapat dihapus jika tidak diperlukan -->
+
+ 
+  <!-- Wrapper for slides, Ini adalah Tempat Gambar-->
+  <div class="carousel-inner" align="center">
+    <div class="item active">
+    	<div class="gear" id="gear1"></div>
+      <img src="SAMPUL DEPAN.png" alt="slideshow-mudah" width="810" height="975" align="bottom">
+      <img class="gear2" id="gear2">
+     
+     <img class="pics" id="pics">
+     <img class="pics-dua" id="pics-dua">
+     <img class="pics-tiga" id="pics-tiga">
+     <img class="pics-empat" id="pics-empat">
+     <img class="pics-lima" id="pics-lima">
+     
+     
+    </div>
+    <div class="item">
+      <img class="" src="page2.jpg" alt="slideshow-mudah" width="810" height="975"> <!—Gambar -->
+      
+    </div>
+    <div class="item">
+      <img src="page3.jpg" alt="slideshow-mudah" width="810" height="975"> <!—Gambar -->
+      
+    </div>
+    <div class="item">
+      <img class="" src="page4.jpg" alt="slideshow-mudah" width="810" height="975"> <!—Gambar -->
+      <img class="pics-hape1" id="pics-hape1"> 
+      <img class="pics-hape2" id="pics-hape2"> 
+      <img class="pics-asean" id="pics-asean">  
+    </div>
+    
+    <div class="item">
+      <img class="" src="page5.jpg" alt="slideshow-mudah" width="810" height="975"> <!—Gambar -->
+      
+    </div>
+    <div class="item">
+      <img class="" src="page6.jpg" alt="slideshow-mudah" width="810" height="975"> <!—Gambar -->
+      
+    </div>
+    <div class="item">
+      <img class="" src="page7.jpg" alt="slideshow-mudah" width="810" height="975"> <!—Gambar -->
+      
+    </div>
+    <div class="item">
+      <img class="" src="page8.jpg" alt="slideshow-mudah" width="810" height="975"> <!—Gambar -->
+      
+    </div>
+    <div class="item">
+      <img class="" src="page9.jpg" alt="slideshow-mudah" width="810" height="975"> <!—Gambar -->
+      
+    </div>
+    <div class="item">
+      <img class="" src="page10.jpg" alt="slideshow-mudah" width="810" height="975"> <!—Gambar -->
+      
+    </div>
+    <div class="item">
+      <img class="" src="page11.jpg" alt="slideshow-mudah" width="810" height="975"> <!—Gambar -->
+      <img class="pics-telkomsel" id="pics-telkomsel"> 
+      <video id="playervideo3" width="300" height="200" controls loop>
+								<source src="video/iklan-tsel.mp4"> </video>
+      
+    </div>
+    <div class="item">
+      <img class="" src="page12.jpg" alt="slideshow-mudah" width="810" height="975"> <!—Gambar -->
+      <img class="pics-pjb" id="pics-pjb">
+      
+    </div>
+    <div class="item">
+      <img class="" src="page13.jpg" alt="slideshow-mudah" width="810" height="975"> <!—Gambar -->
+      <img class="pics-smea" id="pics-smea">
+      
+    </div>
+    <div class="item">
+    <img class="" src="page14.jpg" alt="slideshow-mudah" width="810" height="975"> <!—Gambar -->
+      
+    </div>
+    <div class="item">
+    <img class="" src="page15.jpg" alt="slideshow-mudah" width="810" height="975"> <!—Gambar -->
+      
+    </div>
+    <div class="item">
+    <img class="" src="page16.png" alt="slideshow-mudah" width="810" height="975"> <!—Gambar -->
+      
+    </div>
+     
+    
+  </div>
+ 
+  <!-- Controls, Ini adalah Panah Kanan dan Kiri. item ini dapat dihapus jika tidak diperlukan-->
+  <a class="left carousel-control" href="#slideshow-mudah" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#slideshow-mudah" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+
+
+
+  <!-- Content END -->
+   
+
+
+
+
+<div id="openModal2" class="modalDialog2">
+			<div>
+				<a href="#" title="Close2" class="close2" onclick="init()">X</a>
+				<h2>Help</h2>
+      <img src="thumbnail/help/help button.jpg">
+      </div>
+  </div>
+
+<div id="openModal" class="modalDialog">
+			<div>
+				<a href="#" title="Close" class="close" onclick="init()">X</a>
+				<h2>Content</h2>
+			
+            <a href="#slideshow-mudah" data-slide-to="0"><img src="thumbnail/t1.jpg"></a>
+					<a href="#slideshow-mudah" data-slide-to="1"><img src="thumbnail/t2.jpg"></a> 
+					<a href="#slideshow-mudah" data-slide-to="2"><img src="thumbnail/t3.jpg"></a> 
+					<a href="#slideshow-mudah" data-slide-to="3"><img src="thumbnail/t4.jpg"></a>					
+					<a href="#slideshow-mudah" data-slide-to="4"><img src="thumbnail/t5.jpg"></a>
+					<a href="#slideshow-mudah" data-slide-to="5"><img src="thumbnail/t6.jpg"></a>
+					<a href="#slideshow-mudah" data-slide-to="6"><img src="thumbnail/t7.jpg"></a>
+					<a href="#slideshow-mudah" data-slide-to="7"><img src="thumbnail/t8.jpg"></a>
+					<a href="#slideshow-mudah" data-slide-to="8"><img src="thumbnail/t9.jpg"></a>
+                    <a href="#slideshow-mudah" data-slide-to="9"><img src="thumbnail/t10.jpg"></a>
+                    <a href="#slideshow-mudah" data-slide-to="10"><img src="thumbnail/t11.jpg"></a>
+                    <a href="#slideshow-mudah" data-slide-to="11"><img src="thumbnail/t12.jpg"></a>
+                    <a href="#slideshow-mudah" data-slide-to="12"><img src="thumbnail/t13.jpg"></a>
+                    <a href="#slideshow-mudah" data-slide-to="13"><img src="thumbnail/t14.jpg"></a>
+                    <a href="#slideshow-mudah" data-slide-to="14"><img src="thumbnail/t15.jpg"></a>
+                    <a href="#slideshow-mudah" data-slide-to="15"><img src="thumbnail/t16.png"></a>
+			</div>
+  </div>
+   
+   
+   
+   
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/fullscreen.js"></script>
+    <script type="text/javascript" src="bootstrap.js">
+    </script>
+    <script src="bootstrap/js/audio.js"></script>
+    <script src="bootstrap/js/carousel.js"></script>
+  <script src="bootstrap/js/zoomx.js"></script>
+  <script src="bootstrap/js/dialog.js"></script>
+  <style>
+	.modalDialog {
+		position: absolute;
+		font-family: Arial, Helvetica, sans-serif;
+		top: -100px;
+		right: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+
+	.modalDialog:target {
+		opacity:1;
+		pointer-events: auto;
+	}
+
+	.modalDialog > div {
+		width: 1060px;
+		position: relative;
+		margin: 10%auto;
+		padding: 0px 20px 13px 20px;
+		border-radius: 10px;
+		background: #333;
+		background: -moz-linear-gradient(#fff, #333);
+		background: -webkit-linear-gradient(#fff, #333);
+		background: -o-linear-gradient(#fff, #333);
+	}
+	.modalDialogSound {
+		position: absolute;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+	.close {
+		background: #333;
+		color: #FFFFFF;
+		line-height: 25px;
+		position: absolute;
+		right: -12px;
+		text-align: center;
+		top: -10px;
+		width: 24px;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+	}
+
+	.close:hover { background: #999; }
+	</style>
+  
+  
+  <!-- help dialog-->
+  
+  <style>
+	.modalDialog2 {
+		width: 1366px;
+		height:	766px;
+		position: absolute;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0px;
+		right: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+
+	.modalDialog2:target {
+		opacity:1;
+		pointer-events: auto;
+	}
+
+	.modalDialog2 > div {
+		width: 875px;
+		position: relative;
+		margin: 10%auto;
+		padding: 0px 20px 13px 20px;
+		border-radius: 10px;
+		background: #333;
+		background: -moz-linear-gradient(#fff, #333);
+		background: -webkit-linear-gradient(#fff, #333);
+		background: -o-linear-gradient(#fff, #333);
+	}
+	.modalDialogSound2 {
+		position: absolute;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+	.close2 {
+		background: #333;
+		color: #FFFFFF;
+		line-height: 25px;
+		position: absolute;
+		right: -12px;
+		text-align: center;
+		top: -10px;
+		width: 24px;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+	}
+
+	.close2:hover { background: #999; }
+	</style>
+  
+  <style>
+html,body{margin:0;padding:0;height:100%;font:13px Arial;}
+#wrapper{min-height:100%;position:relative;}
+#header{background:#f0f0f0;padding:5px;height:50px;color:#0000ff;}
+#body{padding-bottom:40px;padding-left:10px;}
+#footer{background: #000;position:absolute;bottom:0;width:100%;
+   text-align:center;color:#808080;}
+</style>
+
+<div id="musik"><abbr title="Musik" rel="tooltip"><img src="TOMBOL/MUSIK.png" width="29px"></abbr></div>
+<div class="subs">
+                        <div style="width=330px;">
+                            <ul>
+                                <li><form class="lagu"><input type="file" name="umusik" id="audio"></form><audio id="player"><audio></li>
+                            </ul>
+                        </div>
+    <style>
+ html,body{margin:0;padding:0;height:100%;font:13px Arial;}
+ #header{background:none;padding:5px;height:50px;color:none;}
+#body{padding-bottom:40px;padding-left:10px;}
+#footer{
+    height:50px;
+    line-height:50px;
+    background: #000;
+ 
+    position: fixed;
+    bottom:0px;
+ 
+    width:100%; /*biar memenuhi layar*/
+}
+   text-align:center;color:none;}
+ </style>
+ <div id="wrapper">
+ <div id="header"></div>
+ <div id="body"></div>
+ <div id="footer">
+   <a class="cover-page" href="#slideshow-mudah" data-slide-to="0"><img src="TOMBOL/Untitled-1.png"></a>
+  <a class="last page" href="#slideshow-mudah" data-slide-to="15"><img src="TOMBOL/2.png"></a>
+  
+  
+</div>
+</div>
+
+
+<div id="Clouds">
+  <div class="Cloud Foreground"></div>
+  <div class="Cloud Background"></div>
+  <div class="Cloud Foreground"></div>
+  <div class="Cloud Background"></div>
+  <div class="Cloud Foreground"></div>
+  <div class="Cloud Background"></div>
+  <div class="Cloud Background"></div>
+  <div class="Cloud Foreground"></div>
+  <div class="Cloud Background"></div>
+  <div class="Cloud Background"></div>
+<!--  <svg viewBox="0 0 40 24" class="Cloud"><use xlink:href="#Cloud"></use></svg>-->
+</div>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="40px" height="24px" viewBox="0 0 40 24" enable- xml:space="preserve">
+  <defs>
+    <path id="Cloud" d="M33.85,14.388c-0.176,0-0.343,0.034-0.513,0.054c0.184-0.587,0.279-1.208,0.279-1.853c0-3.463-2.809-6.271-6.272-6.271
+	c-0.38,0-0.752,0.039-1.113,0.104C24.874,2.677,21.293,0,17.083,0c-5.379,0-9.739,4.361-9.739,9.738
+	c0,0.418,0.035,0.826,0.084,1.229c-0.375-0.069-0.761-0.11-1.155-0.11C2.811,10.856,0,13.665,0,17.126
+	c0,3.467,2.811,6.275,6.272,6.275c0.214,0,27.156,0.109,27.577,0.109c2.519,0,4.56-2.043,4.56-4.562
+	C38.409,16.43,36.368,14.388,33.85,14.388z"/>
+  </defs>
+</svg>
+<script src="js/epmrgo.js"></script>
+
+
+
+  </body>
+
+  
+</html>
