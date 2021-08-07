@@ -1,0 +1,29 @@
+*{margin:0px auto;}
+html,body{
+    height:100%;
+}
+#containerb{
+    min-height:100%;
+    position:relative;
+}
+ 
+#headerb{
+	background: #0cf;
+	padding-top: 0px;
+	}
+#contentb{
+    padding:10px;
+     
+    padding-bottom:60px; /*sama atau lebih besar dari tinggi footer*/
+}
+#footerb{
+    height:50px;
+    line-height:50px;
+    background:#333;
+    color:#fff;
+ 
+    position:absolute;
+    bottom:0px;
+ 
+    width:100%; /*biar memenuhi layar*/
+}

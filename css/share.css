@@ -1,0 +1,56 @@
+body {
+  background: #222333;
+  color: #fff;
+}
+
+
+#button{
+	position:absolute;
+	background:url(../../lab/float%20bg/MATRIKS%20MAGZ%20season%202/TOMBOL/share%20button.png);
+  background-position:bottom;
+	background-size:100%;
+	z-index:1008;
+	height: 280px;
+	left: 330px;
+	top: 145px;
+	width: 290px;
+}
+
+#button:hover {
+}
+
+#button.clicked {
+}
+
+#comment-container {
+  background: rgba(0,0,0,.3);
+  text-align: center;
+  width: 200px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+
+
+@-webkit-keyframes cckw {
+    0% {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+    100% {
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+}
+@-moz-keyframes cckw {
+    0% {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+    100% {
+        -moz-transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}

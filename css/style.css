@@ -1,0 +1,531 @@
+.lagu {
+width:200px;
+} 
+
+#Clouds {
+  position: absolute;
+  z-index:-10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 70%;
+  overflow: hidden;
+  -webkit-animation: FadeIn 3s ease-out;
+          animation: FadeIn 3s ease-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@-webkit-keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.Cloud {
+  position: absolute;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  height: 270px;
+  -webkit-animation-duration: 120s;
+          animation-duration: 120s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: Float, FadeFloat;
+          animation-name: Float, FadeFloat;
+  z-index: 1;
+}
+.Cloud.Foreground {
+  height: 50%;
+  min-height: 70px;
+  z-index: 3;
+}
+.Cloud.Background {
+  height: 9.09090909%;
+  min-height: 8px;
+  -webkit-animation-duration: 210s;
+          animation-duration: 210s;
+}
+@-webkit-keyframes Float {
+  from {
+    -webkit-transform: translateX(100%) translateZ(0);
+            transform: translateX(100%) translateZ(0);
+  }
+  to {
+    -webkit-transform: translateX(-15%) translateZ(0);
+            transform: translateX(-15%) translateZ(0);
+  }
+}
+@keyframes Float {
+  from {
+    -webkit-transform: translateX(100%) translateZ(0);
+            transform: translateX(100%) translateZ(0);
+  }
+  to {
+    -webkit-transform: translateX(-15%) translateZ(0);
+            transform: translateX(-15%) translateZ(0);
+  }
+}
+/*
+@keyframes Float {
+  from { transform: translateX(100%) translateY(-100%) translateZ(0); }
+  50% { transform: translateX(55%) translateY(0) translateZ(0); }
+  to { transform: translateX(-5%) translateY(-100%) translateZ(0); }
+}
+*/
+@-webkit-keyframes FadeFloat {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  5%,
+  90% {
+    opacity: 1;
+  }
+}
+@keyframes FadeFloat {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  5%,
+  90% {
+    opacity: 1;
+  }
+}
+.Cloud:nth-child(10) {
+  -webkit-animation-delay: -184.61538462s;
+          animation-delay: -184.61538462s;
+  top: 60%;
+}
+.Cloud.Foreground:nth-child(10) {
+  -webkit-animation-duration: 80s;
+          animation-duration: 80s;
+  height: 35%;
+}
+.Cloud.Background:nth-child(10) {
+  -webkit-animation-duration: 110s;
+          animation-duration: 110s;
+  height: -3.40909091%;
+}
+.Cloud:nth-child(9) {
+  -webkit-animation-delay: -166.15384615s;
+          animation-delay: -166.15384615s;
+  top: 54%;
+}
+.Cloud.Foreground:nth-child(9) {
+  -webkit-animation-duration: 84s;
+          animation-duration: 84s;
+  height: 32.5%;
+}
+.Cloud.Background:nth-child(9) {
+  -webkit-animation-duration: 114s;
+          animation-duration: 114s;
+  height: -2.15909091%;
+}
+.Cloud:nth-child(8) {
+  -webkit-animation-delay: -147.69230769s;
+          animation-delay: -147.69230769s;
+  top: 48%;
+}
+.Cloud.Foreground:nth-child(8) {
+  -webkit-animation-duration: 88s;
+          animation-duration: 88s;
+  height: 30%;
+}
+.Cloud.Background:nth-child(8) {
+  -webkit-animation-duration: 118s;
+          animation-duration: 118s;
+  height: -0.90909091%;
+}
+.Cloud:nth-child(7) {
+  -webkit-animation-delay: -129.23076923s;
+          animation-delay: -129.23076923s;
+  top: 42%;
+}
+.Cloud.Foreground:nth-child(7) {
+  -webkit-animation-duration: 92s;
+          animation-duration: 92s;
+  height: 27.5%;
+}
+.Cloud.Background:nth-child(7) {
+  -webkit-animation-duration: 122s;
+          animation-duration: 122s;
+  height: 0.34090909%;
+}
+.Cloud:nth-child(6) {
+  -webkit-animation-delay: -110.76923077s;
+          animation-delay: -110.76923077s;
+  top: 36%;
+}
+.Cloud.Foreground:nth-child(6) {
+  -webkit-animation-duration: 96s;
+          animation-duration: 96s;
+  height: 25%;
+}
+.Cloud.Background:nth-child(6) {
+  -webkit-animation-duration: 126s;
+          animation-duration: 126s;
+  height: 1.59090909%;
+}
+.Cloud:nth-child(5) {
+  -webkit-animation-delay: -92.30769231s;
+          animation-delay: -92.30769231s;
+  top: 30%;
+}
+.Cloud.Foreground:nth-child(5) {
+  -webkit-animation-duration: 100s;
+          animation-duration: 100s;
+  height: 22.5%;
+}
+.Cloud.Background:nth-child(5) {
+  -webkit-animation-duration: 130s;
+          animation-duration: 130s;
+  height: 2.84090909%;
+}
+.Cloud:nth-child(4) {
+  -webkit-animation-delay: -73.84615385s;
+          animation-delay: -73.84615385s;
+  top: 24%;
+}
+.Cloud.Foreground:nth-child(4) {
+  -webkit-animation-duration: 104s;
+          animation-duration: 104s;
+  height: 20%;
+}
+.Cloud.Background:nth-child(4) {
+  -webkit-animation-duration: 134s;
+          animation-duration: 134s;
+  height: 4.09090909%;
+}
+.Cloud:nth-child(3) {
+  -webkit-animation-delay: -55.38461538s;
+          animation-delay: -55.38461538s;
+  top: 18%;
+}
+.Cloud.Foreground:nth-child(3) {
+  -webkit-animation-duration: 108s;
+          animation-duration: 108s;
+  height: 17.5%;
+}
+.Cloud.Background:nth-child(3) {
+  -webkit-animation-duration: 138s;
+          animation-duration: 138s;
+  height: 5.34090909%;
+}
+.Cloud:nth-child(2) {
+  -webkit-animation-delay: -36.92307692s;
+          animation-delay: -36.92307692s;
+  top: 12%;
+}
+.Cloud.Foreground:nth-child(2) {
+  -webkit-animation-duration: 112s;
+          animation-duration: 112s;
+  height: 15%;
+}
+.Cloud.Background:nth-child(2) {
+  -webkit-animation-duration: 142s;
+          animation-duration: 142s;
+  height: 6.59090909%;
+}
+.Cloud:nth-child(1) {
+  -webkit-animation-delay: -18.46153846s;
+          animation-delay: -18.46153846s;
+  top: 6%;
+}
+.Cloud.Foreground:nth-child(1) {
+  -webkit-animation-duration: 116s;
+          animation-duration: 116s;
+  height: 12.5%;
+}
+.Cloud.Background:nth-child(1) {
+  -webkit-animation-duration: 146s;
+          animation-duration: 146s;
+  height: 7.84090909%;
+}
+.Cloud {
+  background-image: url(../awan.png);
+}
+.Cloud.Background {
+  background-image: url(../awan1.png);
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+body {
+  color: #FFF;
+  background-color: #333;
+  background-image: -webkit-radial-gradient(circle, #7BC2D7 0%, #3187B5 70%, #3187B5 100%);
+  background-image:background: -webkit-linear-gradient(#CCC, #333); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#CCC, #333); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#CCC, #333); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#CCC, #333); /* Standard syntax */;
+}
+
+
+
+
+
+#pics {
+	position:absolute;
+	background: url(../pict/fb.png) no-repeat 100px 0;
+	background-position:top;
+	background-size:100%;
+	z-index:1008;
+	height: 100px;
+	left: 690px;
+	top: 145px;
+	width: 80px;
+	-moz-animation-name: float;
+	-moz-animation-duration: 3s;
+	-webkit-animation-name: float;
+	-webkit-animation-duration: 3s;
+}
+
+
+
+#pics-dua {
+	position:absolute;
+	background: url(../pict/twitter.png) no-repeat 100px 0;
+	background-position: top;
+	background-size:100%;
+	z-index:1009;
+	height: 100px;
+	left: 980px;
+	top: 145px;
+	width: 80px;
+	-webkit-animation: float 2.75s infinite;
+  -moz-animation: float 2.75s infinite;
+  animation: float 2.75s infinite;
+}
+
+#pics-tiga {
+	position:absolute;
+	background: url(../pict/Pesan.png) no-repeat 100px 0;
+	background-position: top;
+	background-size:75%;
+	z-index:1009;
+	height: 100px;
+	left: 820px;
+	top: 145px;
+	width: 80px;
+	-webkit-animation: float 3.25s infinite;
+  -moz-animation: float 3.25s infinite;
+  animation: float 3.25s infinite;
+}
+
+#pics-empat {
+	position:absolute;
+	background: url(../pict/youtube.png) no-repeat 100px 0;
+	background-position: top;
+	background-size:85%;
+	z-index:1009;
+	height: 100px;
+	left: 900px;
+	top: 152px;
+	width: 80px;
+	-webkit-animation: float 2.45s infinite;
+  -moz-animation: float 2.45s infinite;
+  animation: float 2.45s infinite;
+}
+
+#pics-lima {
+	position:absolute;
+	background: url(../Logo%20Asean.png) no-repeat 100px 0;
+	background-position: top;
+	background-size:85%;
+	z-index:1009;
+	height: 100px;
+	left: 770px;
+	top: 192px;
+	width: 80px;
+	-webkit-animation: float 3.75s infinite;
+  -moz-animation: float 3.75s infinite;
+  animation: float 3.75s infinite;
+}
+
+#pics-hape1 {
+	position:absolute;
+	background: url(../HP%20Mea%201.png) no-repeat 100px 0;
+	background-position: top;
+	background-size:100%;
+	z-index:1009;
+	height: 180px;
+	left: 370px;
+	top: 75px;
+	width: 130px;
+	-webkit-animation: float 2.75s infinite;
+  -moz-animation: float 2.75s infinite;
+  animation: float 2.75s infinite;
+}
+
+#pics-hape2 {
+	position:absolute;
+	background: url(../HP%20Mea%202.png) no-repeat 100px 0;
+	background-position: top;
+	background-size:100%;
+	z-index:1009;
+	height: 200px;
+	left: 860px;
+	top: 75px;
+	width: 150px;
+	-webkit-animation: float 2.75s infinite;
+  -moz-animation: float 2.75s infinite;
+  animation: float 2.75s infinite;
+}
+
+
+#pics-asean {
+	position:absolute;
+	background: url(../Logo%20Asean.png) no-repeat 100px 0;
+	background-position: center;
+	background-size:100%;
+	z-index:1009;
+	height: 130px;
+	left: 610px;
+	top: 246.5px;
+	width: 130px;
+	-webkit-animation: spin 2.75s infinite;
+  -moz-animation: spin 2.75s infinite;
+  animation: spin 2.75s infinite;
+}
+
+#pics-telkomsel {
+	position:absolute;
+	background: url(../tsel.png) no-repeat 100px 0;
+	background-position:center;
+	background-size:100%;
+	z-index:1010;
+	height: 200px;
+	left: 360px;
+	top: 30px;
+	width: 150px;
+	-webkit-animation: float 2.75s infinite;
+  -moz-animation: float 2.75s infinite;
+  animation: float 2.75s infinite;
+}
+
+#pics-pjb {
+	position:absolute;
+	background: url(../logo%20pjb.png) no-repeat 100px 0;
+	background-position:center;
+	background-size:100%;
+	z-index:1010;
+	height: 225px;
+	left: 750px;
+	top: 0px;
+	width: 225px;
+	-webkit-animation: float 2.75s infinite;
+  -moz-animation: float 2.75s infinite;
+  animation: float 2.75s infinite;
+}
+
+#pics-smea {
+	position:absolute;
+	background: url(../LOGO%20SMK.png) no-repeat 100px 0;
+	background-position:center;
+	background-size:100%;
+	z-index:1010;
+	height: 225px;
+	left: 342.5px;
+	top: 100px;
+	width: 225px;
+	-webkit-animation: float 2.75s infinite;
+  -moz-animation: float 2.75s infinite;
+  animation: float 2.75s infinite;
+}
+
+
+@-webkit-keyframes spin{
+    0%{
+    -moz-transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    }
+    100%{
+    -moz-transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    }
+}
+@-moz-keyframes spin{
+    0%{
+    -moz-transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    }
+    100%{
+    -moz-transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    }
+}
+
+@-o-keyframes spin{
+    0%{
+    -moz-transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    }
+    100%{
+    -moz-transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    }
+}
+
+@-ms-keyframes spin{
+    0%{
+    -moz-transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    }
+    100%{
+    -moz-transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    }
+}
+
+@keyframes float {
+  from {
+    transform: translateY(4px) rotate3d(0, 0, 1, 3deg);
+  }
+  to {
+    transform: translateY(-4px) rotate3d(0, 0, 1, 0deg);
+  }
+}
